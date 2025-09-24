@@ -1,4 +1,0 @@
-Esta é a documentação do projeot StarLAR
-
-Um mini blog de curiosidades astronômicas, desenvolvido como parte do Bootcamp de Desenvolvimento de Sistemas Web Avançados - Front-End.  
-O objetivo do projeto é oferecer uma experiência de navegação intuitiva, inclusiva e acessível, trazendo informações sobre astronomia de forma simples e envolvente.
