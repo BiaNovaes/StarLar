@@ -4,13 +4,10 @@ html, body {
     padding: 0;
 }
 body {
-    min-height: 100vh;
-    min-width: 100vw;
     margin: 0;
     padding: 0;
     background-color: black;
     background-size: cover;
-    position: relative;
 
 }
 
@@ -18,9 +15,8 @@ body {
   bottom: 30px;             
   left: 50%;
   font-size: 48px;
-  cursor: pointer;  /* Mostra uma mão quando coloca o mouse em cima */
+  cursor: pointer; 
   animation: bounce 1.5s infinite;
-  
 }
 
 @keyframes bounce {
@@ -32,17 +28,6 @@ body {
   }
 }
 
-.imagemConstelaçao{
-    /* margin-top: 100px;
-    margin-left: 200px;
-    width: 400px;
-    height: 400px; */
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-top: 150px;
-    
-}
 
 .container h1,
 .container p {
@@ -63,7 +48,7 @@ body {
     }
 }
 
-.container h1 {
+.containerr h1 {
     color: white;
     font-size: 70px;
     margin-bottom: 0%;
@@ -72,3 +57,111 @@ body {
   font-style: normal;
 }
 
+
+.containerr-imagem {
+	
+	border-radius: 50px; 
+	box-shadow: 4px 4px 4px white;
+justify-content: center;
+	left:450px;
+  position: relative;
+  display: inline-block; 
+  
+    margin-top: 93px;
+}
+
+.containerr-imagem img {
+  display: block;
+  width: 100%;
+}
+
+
+.ponto {
+  position: absolute;
+}
+
+
+.pulsar {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  box-shadow: 1px 1px 4px black;
+  border-radius: 50%;
+  animation: pulso 2s infinite ease-in-out;
+}
+
+@keyframes pulso {
+  0% { transform: scale(0.8); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(0.8); }
+}
+
+.fenix {
+  top: 500px;
+  left: 590px;
+}
+
+.ursa {
+  top: 600px;
+  left: 625px;
+}
+
+.orion{
+	top: 520px;
+	left: 785px;
+}
+
+.ursamenor{
+	top: 710px;
+	left: 825px;
+}
+.andromeda{
+	top: 805px;
+	left: 850px;
+	
+}
+.pegaso{
+	top: 805px;
+	left: 705px;
+	
+}
+.caomenor{
+	top: 895px;
+	left: 680px;
+}
+
+.cruzeiro{
+	top: 880px;
+	left: 595px;
+}
+
+.cao {
+	top: 785px;
+	left: 500px;
+}
+
+
+.texto-oculto {
+  position: absolute;
+  top: 50%;
+  left: 110%; 
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px;
+  width: 150px;
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s; 
+  z-index: 10;
+}
+
+.ponto:hover .texto-oculto {
+  opacity: 1;
+  visibility: visible;
+}
+
+.ponto:hover .pulsar {
+  animation-play-state: paused; 
+  background-color: rgb(255, 0, 0); 
+}
