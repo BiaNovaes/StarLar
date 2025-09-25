@@ -1,0 +1,74 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    background-size: cover;
+    position: relative;
+
+}
+
+.flecha {
+  bottom: 30px;             
+  left: 50%;
+  font-size: 48px;
+  cursor: pointer;  /* Mostra uma mão quando coloca o mouse em cima */
+  animation: bounce 1.5s infinite;
+  
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(10px);
+  }
+}
+
+.imagemConstelaçao{
+    /* margin-top: 100px;
+    margin-left: 200px;
+    width: 400px;
+    height: 400px; */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 150px;
+    
+}
+
+.container h1,
+.container p {
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: fadeInUp 1s forwards;
+    text-align: center;
+}
+
+.container p {
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container h1 {
+    color: white;
+    font-size: 70px;
+    margin-bottom: 0%;
+    font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+

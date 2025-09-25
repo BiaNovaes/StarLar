@@ -23,6 +23,7 @@ p {
     opacity: 0;
     transform: translateY(-30px);
     animation: fadeInUp 1s forwards;
+    text-align: center;
 }
 
 .container p {

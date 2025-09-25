@@ -29,7 +29,10 @@ nav {
 
 .logo {
     display: flex;
-    align-items: flex-end;
-    align-items: center;
-    color: white;
+    align-items: flex-start;
+    width: 200px;
+    height: 70px;
+    z-index: 3;
+    margin-top: 20px;
+    margin-left: 5px;
 }
