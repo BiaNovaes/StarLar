@@ -20,7 +20,7 @@ body{
   bottom: 30px;             
   left: 50%;
   font-size: 48px;
-  cursor: pointer;  /* Mostra uma mão quando coloca o mouse em cima */
+  cursor: pointer;  
   animation: bounce 1.5s infinite;
   
 }

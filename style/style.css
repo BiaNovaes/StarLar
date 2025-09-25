@@ -1,8 +1,10 @@
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
     padding: 0;
 }
+
 body {
     min-height: 100vh;
     min-width: 100vw;
@@ -14,18 +16,38 @@ body {
     overflow: hidden;
 }
 
+footer {
+  position: absolute; 
+  bottom: 20px;      
+  width: 100%;       
+  color: white;       
+  z-index: 3;        
+}
+
+footer p {
+  text-align: center; 
+  margin: 0;
+  padding: 0;
+}
+
+
 .overlay {
     position: fixed;
-    top: 0; left: 0;
-    width: 100vw; height: 100vh;
-    background: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
     z-index: 1;
     pointer-events: none;
 }
+
 .container {
     position: fixed;
-    top: 0; left: 0;
-    width: 100vw; height: 100vh;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,13 +55,14 @@ body {
     z-index: 2;
     padding-top: 60px;
 }
+
 .container h1 {
     color: white;
     font-size: 70px;
     margin-bottom: 0%;
     font-family: "Luckiest Guy", cursive;
-  font-weight: 400;
-  font-style: normal;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .container p {
@@ -49,11 +72,13 @@ body {
 }
 
 
-.container h1, .container p {
+.container h1,
+.container p {
     opacity: 0;
     transform: translateY(-30px);
     animation: fadeInUp 1s forwards;
 }
+
 .container p {
     animation-delay: 0.5s;
 }

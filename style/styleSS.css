@@ -12,6 +12,16 @@ h1 {
     font-size: 50px;
 }
 
+h2 {
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    align-items: center;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+
 h1,
 p {
     color: white;
